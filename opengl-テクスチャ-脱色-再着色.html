@@ -1,0 +1,689 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+		<link href="https://fonts.googleapis.com/css?family=Mr+Dafoe" rel="stylesheet" type="text/css">
+
+		<style type="text/css">
+			html,body{font-family:"Open Sans",Arial,sans-serif;font-size:14px;font-weight:400;background:#f3f3f3 url(https://sssiii.up.seesaa.net/image/drag_test_007.png
+) no-repeat center center fixed;background-size:cover;height:100%}#title{font-family:"Mr Dafoe",Times,serif;font-size:34px;background:rgba(255,255,255,.8);margin-bottom:34px}.header{padding-bottom:13px;margin-bottom:13px;border-bottom:1px solid #eee}a{color:#26ADE4;text-decoration:none}#title a{color:#333;margin-left:21px}#title a:hover{text-decoration:none;color:#26ADE4}.sidebar ul{margin:0;padding:0}.sidebar ul li{list-style:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0 13px 0;padding:13px}.navi a{margin:5px 2px;font-size:95%}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}			
+		</style>
+
+		<title>Opengl テクスチャ 脱色 再着色</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "James"
+  },
+  "headline": "Opengl テクスチャ 脱色 再着色",
+  "datePublished": "2021-04-30",
+  "image": [http://blawat2015.no-ip.com/~mieki256/diary/img/20150601_night_building/ss_02.png,https://sssiii.up.seesaa.net/image/drag_test_007.png,https://cdn.slidesharecdn.com/ss_thumbnails/opengles2-0fragmentshader-120528030532-phpapp02-thumbnail-4.jpg?cb=1338174435],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=opengl テクスチャ 脱色 再着色",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+		<!-- Head tag Code -->	</head>
+	<body>
+		<header class="bg-white fixed-top">			
+			<nav class="navbar navbar-light bg-white mb-0">
+				<div class="container justify-content-center justify-content-sm-between">	
+				  <a href="/" title="Blog" class="navbar-brand mb-1">Blog</a>
+				  				</div>			  
+			</nav>				
+		</header>
+		<main class="main container bg-white">
+			<div class="col-md-12 my-4" align="center">
+				<div class="d-block p-4">
+	<br/><center>
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'd232bd6e1c0d85f8dc8c8119bc5f5a1e',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://magnificentmanlyyeast.com/d232bd6e1c0d85f8dc8c8119bc5f5a1e/invoke.js"></scr' + 'ipt>');
+</script></center><br/>
+</div>			</div>
+			<div class="row header">
+				<div class="col-sm-12 text-center p-2">
+						<h1>Opengl テクスチャ 脱色 再着色</h1>
+
+	
+	<div class="navi text-center">
+										<a class="badge badge-light" href="/%E5%8E%84%E9%99%A4%E3%81%91-%E4%B8%83%E8%89%B2-%E6%84%8F%E5%91%B3.html">厄除け 七色 意味</a>
+											<a class="badge badge-success" href="/%E7%BE%A4%E9%9D%92-%E3%81%84%E3%82%8D-%E3%81%A3-%E3%81%A6-%E3%81%A9%E3%82%93%E3%81%AA-%E8%89%B2.html">群青 いろ っ て どんな 色</a>
+											<a class="badge badge-warning" href="/%E3%82%B9%E3%83%9E%E3%83%9B%E3%82%B1%E3%83%BC%E3%82%B9-%E3%81%AE-%E8%89%B2-%E6%80%A7%E6%A0%BC.html">スマホケース の 色 性格</a>
+											<a class="badge badge-info" href="/%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC-%E6%AD%AF-%E3%81%AE-%E7%9D%80%E8%89%B2.html">コーヒー 歯 の 着色</a>
+											<a class="badge badge-secondary" href="/%E3%82%B7%E3%83%A3%E3%83%81%E3%83%8F%E3%82%BF-%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%97-%E5%8F%B0-%E8%89%B2-%E8%A6%8B%E6%9C%AC.html">シャチハタ スタンプ 台 色 見本</a>
+											<a class="badge badge-primary" href="/%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E3%83%90%E3%82%B9-%E7%B5%A6%E6%B9%AF%E5%99%A8-%E3%82%B3%E3%83%AD%E3%83%8A-%E6%9C%80%E4%BD%8E.html">ユニットバス 給湯器 コロナ 最低</a>
+											<a class="badge badge-light" href="/%E3%83%81%E3%83%8E%E3%83%91%E3%83%B3-%E6%B4%97%E6%BF%AF-%E8%89%B2-%E8%90%BD%E3%81%A1.html">チノパン 洗濯 色 落ち</a>
+											<a class="badge badge-info" href="/%E6%B5%B4%E8%A1%A3-%E7%B4%BA%E5%9C%B0-%E5%B8%AF-%E3%81%AE-%E8%89%B2.html">浴衣 紺地 帯 の 色</a>
+											<a class="badge badge-light" href="/%E3%81%AB-%E3%81%93%E3%82%8B-%E3%82%93-%E3%82%AB%E3%83%A9%E3%82%B3%E3%83%B3-%E7%9D%80%E8%89%B2.html">に こる ん カラコン 着色</a>
+											<a class="badge badge-success" href="/%E3%83%87%E3%83%8B%E3%83%A0-%E3%81%AE-%E8%89%B2-%E7%A8%AE%E9%A1%9E.html">デニム の 色 種類</a>
+											<a class="badge badge-primary" href="/%E3%82%AB%E3%83%BC%E3%82%AD-%E3%83%91%E3%83%B3%E3%83%84-%E5%90%88%E3%81%86-%E8%89%B2.html">カーキ パンツ 合う 色</a>
+											<a class="badge badge-dark" href="/3-%E8%89%B2-%E3%81%94%E9%A3%AF-%E3%83%AC%E3%82%B7%E3%83%94.html">3 色 ご飯 レシピ</a>
+											<a class="badge badge-dark" href="/css-%E8%89%B2-%E3%82%92-%E5%A4%89%E3%81%88%E3%82%8B.html">css 色 を 変える</a>
+											<a class="badge badge-warning" href="/%E6%88%90%E4%BA%BA-%E5%BC%8F-%E6%B4%BE%E6%89%8B-%E9%AB%AA-%E8%89%B2.html">成人 式 派手 髪 色</a>
+											<a class="badge badge-secondary" href="/%E8%89%B2-%E5%8F%8D%E8%BB%A2-iphone-%E3%82%A2%E3%83%97%E3%83%AA.html">色 反転 iphone アプリ</a>
+						</div>
+<center>
+	<script type="text/javascript">
+	atOptions = {
+		'key' : 'a7e6ae4bcf1c49afa3b184d0c694ad6c',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://magnificentmanlyyeast.com/a7e6ae4bcf1c49afa3b184d0c694ad6c/invoke.js"></scr' + 'ipt>');
+</script>
+		
+	</center>
+					
+				</div>
+			</div>
+			<div class="row content mb-4">
+				<div class="col-md-12">					
+					
+	
+	<div class="card-columns">
+						
+	  <div class='card'>
+	  	<a href="https://i.stack.imgur.com/F02UQ.png" data-lightbox="roadtrip" data-title="Wrong Colors When Loading Textures In Opengl Stack Overflow">
+						<img class="card-img" src="https://i.stack.imgur.com/F02UQ.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBf0Dhv_5Deyfi3aW-Q-6X8GBvcZexvXt4GJPBApCMZV8oPHOtLvuIi6jUtp35slvW0D0';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Wrong Colors When Loading Textures In Opengl Stack Overflow
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://ogimage.blog.st-hatena.com/10328749687186749048/10328749687238972974/1495590062" data-lightbox="roadtrip" data-title="Openglでテクスチャマッピングをする際の注意点 げぇむぷろぐらみんぐ">
+						<img class="card-img" src="https://ogimage.blog.st-hatena.com/10328749687186749048/10328749687238972974/1495590062" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiRZ7n9dkDGd09WP8ikGRxBHiCOoQsXgbN94KHEwhCeVlkJG9hAYE3mfAwDclGKA8eB_4';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Openglでテクスチャマッピングをする際の注意点 げぇむぷろぐらみんぐ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://cdn21.atwikiimg.com/opengl?cmd=upload&amp;act=open&amp;pageid=321&amp;file=inv.png" data-lightbox="roadtrip" data-title="色の反転 Openglプログラミングメモ Atwiki アットウィキ">
+						<img class="card-img" src="http://cdn21.atwikiimg.com/opengl?cmd=upload&amp;act=open&amp;pageid=321&amp;file=inv.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5llEGxhIyzCXhPbYvJVp-YUYYrMC3rR_2Ujo_ygkIvqzbRplNuucA9SiFHAgy4Xbp8tM';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				色の反転 Openglプログラミングメモ Atwiki アットウィキ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://cdn-ak.f.st-hatena.com/images/fotolife/k/kambayashi/20090716/20090716003657.jpg" data-lightbox="roadtrip" data-title="Opengl Esでテクスチャ Kambayashiの日記">
+						<img class="card-img" src="http://cdn-ak.f.st-hatena.com/images/fotolife/k/kambayashi/20090716/20090716003657.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYx3-ABqbJCAeqdCcFAQm0g8bJ9YcTAtSM55fRKnylBc3fBrOmQmrdnPFQkb_mm37jztI';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Opengl Esでテクスチャ Kambayashiの日記
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://kobazlab.tech/figures/public/koba&#039;slab/programming/object01.png" data-lightbox="roadtrip" data-title="Openglで立体に色がつかないときの解決法 Koba Slab">
+						<img class="card-img" src="https://kobazlab.tech/figures/public/koba&#039;slab/programming/object01.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgg2JBwGrtr16Lb9pGELpwFhhe6I8KTUYEZStPE7PM1khSQwGTNBYo1jAgxt5m8qzpcH4';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Openglで立体に色がつかないときの解決法 Koba Slab
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://blog.techlab-xe.net/wp-content/uploads/2019/05/ogl_mrt_independent_blend-300x239.png" data-lightbox="roadtrip" data-title="Opengl で描画先独立なブレンディング設定を使う すらりん日記">
+						<img class="card-img" src="https://blog.techlab-xe.net/wp-content/uploads/2019/05/ogl_mrt_independent_blend-300x239.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTENSVwsGhom0XQsLd57lCiwbG6pwO5GnSjUMJcggamAuSvDCFcATKrsHbMJHK9PyTWMrw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Opengl で描画先独立なブレンディング設定を使う すらりん日記
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+				<div class='card'>	
+			<div class="d-block p-4">
+	
+</div>		  	
+		  	<h3 class="h6 p-2"><b></b></h3>
+					</div>
+		
+						
+	  <div class='card'>
+	  	<a href="https://i.stack.imgur.com/fVwso.png" data-lightbox="roadtrip" data-title="Opengl Unwanted Pixels When Rendering A Texture With Transparency Stack Overflow">
+						<img class="card-img" src="https://i.stack.imgur.com/fVwso.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2zFJv7J8RQ_df44IrXPBthR_9fzWYDVEPVQ7LzrWEM1QWFxgDxjFLaWmauKwIncqJwVo';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Opengl Unwanted Pixels When Rendering A Texture With Transparency Stack Overflow
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://cdn21.atwikiimg.com/opengl?cmd=upload&amp;act=open&amp;pageid=40&amp;file=flag.png" data-lightbox="roadtrip" data-title="フラグメントシェーダー Openglプログラミングメモ Atwiki アットウィキ">
+						<img class="card-img" src="http://cdn21.atwikiimg.com/opengl?cmd=upload&amp;act=open&amp;pageid=40&amp;file=flag.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHhGKDtOsgy1tGk8uxajWYJZiQ4UOcUnQBGp-T6EeCx5j3hTu5vCwDyJCw9EBwvejA8lQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				フラグメントシェーダー Openglプログラミングメモ Atwiki アットウィキ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://i.ytimg.com/vi/ol4IsOsyKTc/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Xnaメモ テクスチャアに描画する方法 Xna 4 オークマネコのぺーじ">
+						<img class="card-img" src="https://i.ytimg.com/vi/ol4IsOsyKTc/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStafmZVw6CTwPrsSFNVZg06sFwpLMjkmVOjHYNHnxYSJnIOLAFEI6axIc7RFdBZOw-xbI';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Xnaメモ テクスチャアに描画する方法 Xna 4 オークマネコのぺーじ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://cdn-ak.f.st-hatena.com/images/fotolife/b/boredbone/20140105/20140105223959.png" data-lightbox="roadtrip" data-title="画像に指定の色を重ね合わせて描画 濃厚ソースが絡むシェフこだわりスパゲティー">
+						<img class="card-img" src="http://cdn-ak.f.st-hatena.com/images/fotolife/b/boredbone/20140105/20140105223959.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgRJBh8D_Wv8OgcZHb30PCnySiwT258z8g_6BaFxLYKP4rQvZphifpCNZA7RdQQTmXKJk';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				画像に指定の色を重ね合わせて描画 濃厚ソースが絡むシェフこだわりスパゲティー
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://asura.iaigiri.com/OpenGL/Image/motion_blur2/motionblur2.png" data-lightbox="roadtrip" data-title="Project Asura Opengl エフェクト 14 2 5dモーションブラー">
+						<img class="card-img" src="http://asura.iaigiri.com/OpenGL/Image/motion_blur2/motionblur2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgyvM1Oxw4AmPdZzd9i4Gy0-SCgV1ehSTwC4A0-B0m8qh7VH2wXSCa004wzd695_7IVko';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Project Asura Opengl エフェクト 14 2 5dモーションブラー
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://cdn.image.st-hatena.com/image/square/46523ff5302e66d52e5490c735600f589ed287ea/backend=imagemagick;height=100;version=1;width=100/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fsiguma_sig%2F20170425%2F20170425203010.png" data-lightbox="roadtrip" data-title="Openglでテクスチャマッピングをする際の注意点 げぇむぷろぐらみんぐ">
+						<img class="card-img" src="https://cdn.image.st-hatena.com/image/square/46523ff5302e66d52e5490c735600f589ed287ea/backend=imagemagick;height=100;version=1;width=100/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fsiguma_sig%2F20170425%2F20170425203010.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb_OpkEZyduTgJLqcy7d-BXApM0vD2v7rcGX4drk-6SQZMJK9JAkPU5BQTDj8l4amF';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Openglでテクスチャマッピングをする際の注意点 げぇむぷろぐらみんぐ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://marupeke296.com/images/OGL_No4_tex01.gif" data-lightbox="roadtrip" data-title="その４ テクスチャを貼ってみよう">
+						<img class="card-img" src="http://marupeke296.com/images/OGL_No4_tex01.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9ws4O400vNSrTl7x-f9iw3RFedhaRZ2VuVoIb-nMEJn8rC4FSQgkExrQgHHJaglFh9xs';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				その４ テクスチャを貼ってみよう
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://blawat2015.no-ip.com/~mieki256/diary/img/20150601_night_building/ss_14.png" data-lightbox="roadtrip" data-title="Mieki256 S Diary">
+						<img class="card-img" src="http://blawat2015.no-ip.com/~mieki256/diary/img/20150601_night_building/ss_14.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl0QU_mI2PwMGav_mfa0ByUjrb_KFMejFEjhavvxQHXF0ZcdGWCOXo4fWddtl9jDZ1hFg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Mieki256 S Diary
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://image.slidesharecdn.com/random-141012014539-conversion-gate02/95/glsl-12-638.jpg?cb=1413078469" data-lightbox="roadtrip" data-title="Glslで遊ぶポイントスプライト">
+						<img class="card-img" src="https://image.slidesharecdn.com/random-141012014539-conversion-gate02/95/glsl-12-638.jpg?cb=1413078469" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX9U6-YcXRf6m39gi8Kz_f1oACHcssnHRRxMmABTeHhXLKT3wykvtF7ZlgfDoYc7SKONE';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Glslで遊ぶポイントスプライト
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://wgld.org/i/site/w039_01.jpg" data-lightbox="roadtrip" data-title="Wgld Org Webgl ステンシルバッファでアウトライン">
+						<img class="card-img" src="https://wgld.org/i/site/w039_01.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpxntDvKsPSlvSKtpPDxKpliagEYnfBbw0rR0F92_W_7q4SuJ5R7OB2IgT5vryRdMRZ2E';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Wgld Org Webgl ステンシルバッファでアウトライン
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://blawat2015.no-ip.com/~mieki256/diary/img/20150601_night_building/ss_02.png" data-lightbox="roadtrip" data-title="Mieki256 S Diary">
+						<img class="card-img" src="http://blawat2015.no-ip.com/~mieki256/diary/img/20150601_night_building/ss_02.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNinFL1p1sJxOGzKR0aWBHqfB5UuW2TozngCrX40x6783Iqv1-VmIUfuJJepJ79FZqcN0';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Mieki256 S Diary
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://sssiii.up.seesaa.net/image/drag_test_006.png" data-lightbox="roadtrip" data-title="Opengl Metasequoia メモブログ">
+						<img class="card-img" src="https://sssiii.up.seesaa.net/image/drag_test_006.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR51f2doS3lran4z11FaebKvJnj7b17RjAnyxrH8hE1f0m65IBMLj_C5CuAp4yfoHhAFIg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Opengl Metasequoia メモブログ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://blawat2015.no-ip.com/~mieki256/diary/img/20150601_night_building/ss_19.png" data-lightbox="roadtrip" data-title="Mieki256 S Diary">
+						<img class="card-img" src="http://blawat2015.no-ip.com/~mieki256/diary/img/20150601_night_building/ss_19.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOAS3nXA4TF6U-dLcSCY0YWEsfwuEK491D8_cVD_RJ0lxZEPcfR1x6X1KCartDOMM5We8';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Mieki256 S Diary
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://cdn.slidesharecdn.com/ss_thumbnails/opengles2-0fragmentshader-120528030532-phpapp02-thumbnail-4.jpg?cb=1338174435" data-lightbox="roadtrip" data-title="簡単 Opengl Es 2 0フラグメントシェーダー">
+						<img class="card-img" src="https://cdn.slidesharecdn.com/ss_thumbnails/opengles2-0fragmentshader-120528030532-phpapp02-thumbnail-4.jpg?cb=1338174435" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9T7qWH6y2afXORm_hReANsRLxyCOyZ6ZGlHJtt-7sYHtXGBySanhwsacqBGYoHeEsNys';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				簡単 Opengl Es 2 0フラグメントシェーダー
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://image.slidesharecdn.com/random-141012014539-conversion-gate02/95/glsl-4-638.jpg?cb=1413078469" data-lightbox="roadtrip" data-title="Glslで遊ぶポイントスプライト">
+						<img class="card-img" src="https://image.slidesharecdn.com/random-141012014539-conversion-gate02/95/glsl-4-638.jpg?cb=1413078469" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAxKX-9dHd1j0x0LrNOVmpBXaovM_nrMOamA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Glslで遊ぶポイントスプライト
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://blawat2015.no-ip.com/~mieki256/diary/img/20150601_night_building/ss_06.png" data-lightbox="roadtrip" data-title="Mieki256 S Diary">
+						<img class="card-img" src="http://blawat2015.no-ip.com/~mieki256/diary/img/20150601_night_building/ss_06.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS17WNyq5UfN1UdqpVQj52Q7VWe3K0ub0hb-A';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Mieki256 S Diary
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://blawat2015.no-ip.com/~mieki256/diary/img/20150602_night_building2/m256_buildingtexturemaker_ss1.png" data-lightbox="roadtrip" data-title="Mieki256 S Diary">
+						<img class="card-img" src="http://blawat2015.no-ip.com/~mieki256/diary/img/20150602_night_building2/m256_buildingtexturemaker_ss1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo18nTdK4N5dUKN0j3hgOYhOVIil9c8U-mEw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Mieki256 S Diary
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://cdn21.atwikiimg.com/opengl?cmd=upload&amp;act=open&amp;pageid=77&amp;file=anti.png" data-lightbox="roadtrip" data-title="アンチエイリアシング Openglプログラミングメモ Atwiki アットウィキ">
+						<img class="card-img" src="http://cdn21.atwikiimg.com/opengl?cmd=upload&amp;act=open&amp;pageid=77&amp;file=anti.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_uMfjv26vBB54SvpLUWjy6X8V96C5LBODOQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				アンチエイリアシング Openglプログラミングメモ Atwiki アットウィキ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://image.slidesharecdn.com/shader-141215064102-conversion-gate01/95/glsl-1-638.jpg?cb=1418626398" data-lightbox="roadtrip" data-title="Glslによるシェーダーアートことはじめ">
+						<img class="card-img" src="https://image.slidesharecdn.com/shader-141215064102-conversion-gate01/95/glsl-1-638.jpg?cb=1418626398" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9biB6_wZq-42qJe8D5da6hLOS3in51AQ76Q';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Glslによるシェーダーアートことはじめ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://blawat2015.no-ip.com/~mieki256/diary/img/20150601_night_building/ss_31.png" data-lightbox="roadtrip" data-title="Mieki256 S Diary">
+						<img class="card-img" src="http://blawat2015.no-ip.com/~mieki256/diary/img/20150601_night_building/ss_31.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsn33DaDhbF4NU5BlR9i6HvzUFv6YHFrl3RA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Mieki256 S Diary
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://static.wikia.nocookie.net/minecraft_ja_gamepedia/images/4/45/MainMenu_Update_Aquatic.png/revision/latest/scale-to-width-down/250?cb=20180605101404" data-lightbox="roadtrip" data-title="Java Edition 1 13 開発版 Minecraft Wiki">
+						<img class="card-img" src="https://static.wikia.nocookie.net/minecraft_ja_gamepedia/images/4/45/MainMenu_Update_Aquatic.png/revision/latest/scale-to-width-down/250?cb=20180605101404" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD3SwHz92mDDE3lzufxNz5ndPLgz55gfhMfA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Java Edition 1 13 開発版 Minecraft Wiki
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://sssiii.up.seesaa.net/image/drag_test_005.png" data-lightbox="roadtrip" data-title="Opengl Metasequoia メモブログ">
+						<img class="card-img" src="https://sssiii.up.seesaa.net/image/drag_test_005.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLELeP_lAqj5wiJmMrGQnrp6A_9dO498Bhjw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Opengl Metasequoia メモブログ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://www36.atwiki.jp/directx?cmd=upload&amp;act=open&amp;pageid=21&amp;file=dx9tex.PNG" data-lightbox="roadtrip" data-title="2dテクスチャを描画する Directx9 プログラミングメモ Atwiki アットウィキ">
+						<img class="card-img" src="http://www36.atwiki.jp/directx?cmd=upload&amp;act=open&amp;pageid=21&amp;file=dx9tex.PNG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4aa3mTCr6Zu-KsW6IzO9TbGFE-m0T2ulZZg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				2dテクスチャを描画する Directx9 プログラミングメモ Atwiki アットウィキ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://sssiii.up.seesaa.net/image/drag_test_007.png" data-lightbox="roadtrip" data-title="Opengl Metasequoia メモブログ">
+						<img class="card-img" src="https://sssiii.up.seesaa.net/image/drag_test_007.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsFxJHiHsdBx9Uu-OA5Vw8MAfjY7hWwBVvwQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Opengl Metasequoia メモブログ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="H7cBS0w92eSKJM" data-lightbox="roadtrip" data-title="Http Www Nara Wu Ac Jp Fuchuko Student Ssh Ronbun H22 Pdf">
+						<img class="card-img" src="H7cBS0w92eSKJM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtlv1_8VwJ_G6VDs80iPlETVu2SYQGi_lKWg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Http Www Nara Wu Ac Jp Fuchuko Student Ssh Ronbun H22 Pdf
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="H7cBS0w92eSKJM" data-lightbox="roadtrip" data-title="Http Www Nara Wu Ac Jp Fuchuko Student Ssh Ronbun H22 Pdf">
+						<img class="card-img" src="H7cBS0w92eSKJM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSExIvHEtvVWW47drpdg-Y80IB4eKeup92uNA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Http Www Nara Wu Ac Jp Fuchuko Student Ssh Ronbun H22 Pdf
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://blawat2015.no-ip.com/~mieki256/diary/img/20150601_night_building/ss_32.png" data-lightbox="roadtrip" data-title="Mieki256 S Diary">
+						<img class="card-img" src="http://blawat2015.no-ip.com/~mieki256/diary/img/20150601_night_building/ss_32.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW3gxlDROzuLavYz6T5bTnRMefFdE0iFkx8Q';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Mieki256 S Diary
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+		
+	</div>
+
+		 
+		<div class="d-block mt-4 p-3">
+
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+		</div>
+		
+				</div>
+				<div class="col-sm-12 widget">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center py-4">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+					
+				</div>
+			</div>
+		</main>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+		
+		<!-- Footer CSS JS -->
+<!-- Statcounter code for 2_mamakamaa https://mamakamaa.blogspot.com/ on Blogger -->
+<script type="text/javascript">
+//<![CDATA[
+var sc_project=12506186; 
+var sc_invisible=1; 
+var sc_security="04fde361"; 
+//]]>
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter_xhtml.js" async></script>
+
+		
+		
+		
+			</body>
+</html>

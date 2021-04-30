@@ -1,0 +1,689 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+		<link href="https://fonts.googleapis.com/css?family=Mr+Dafoe" rel="stylesheet" type="text/css">
+
+		<style type="text/css">
+			html,body{font-family:"Open Sans",Arial,sans-serif;font-size:14px;font-weight:400;background:#f3f3f3 url(http://graph.pc-physics.com/image/style1.png
+) no-repeat center center fixed;background-size:cover;height:100%}#title{font-family:"Mr Dafoe",Times,serif;font-size:34px;background:rgba(255,255,255,.8);margin-bottom:34px}.header{padding-bottom:13px;margin-bottom:13px;border-bottom:1px solid #eee}a{color:#26ADE4;text-decoration:none}#title a{color:#333;margin-left:21px}#title a:hover{text-decoration:none;color:#26ADE4}.sidebar ul{margin:0;padding:0}.sidebar ul li{list-style:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0 13px 0;padding:13px}.navi a{margin:5px 2px;font-size:95%}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}			
+		</style>
+
+		<title>Gnuplot 線 の 色</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "James"
+  },
+  "headline": "Gnuplot 線 の 色",
+  "datePublished": "2021-04-30",
+  "image": [https://www.nakamuri.info/mw/images/7/70/%E7%B7%9A%E7%A8%AE%E3%82%92%E6%8C%87%E5%AE%9A%E3%81%99%E3%82%8B03.png,https://cympfh.cc/gnuplot/3d.heatmap.png,https://www2.ccs.tsukuba.ac.jp/Astro/Members/kirihara/gnuplot_src/colorname-list2.png],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=gnuplot 線 の 色",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+		<!-- Head tag Code -->	</head>
+	<body>
+		<header class="bg-white fixed-top">			
+			<nav class="navbar navbar-light bg-white mb-0">
+				<div class="container justify-content-center justify-content-sm-between">	
+				  <a href="/" title="Blog" class="navbar-brand mb-1">Blog</a>
+				  				</div>			  
+			</nav>				
+		</header>
+		<main class="main container bg-white">
+			<div class="col-md-12 my-4" align="center">
+				<div class="d-block p-4">
+	<br/><center>
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'd232bd6e1c0d85f8dc8c8119bc5f5a1e',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://magnificentmanlyyeast.com/d232bd6e1c0d85f8dc8c8119bc5f5a1e/invoke.js"></scr' + 'ipt>');
+</script></center><br/>
+</div>			</div>
+			<div class="row header">
+				<div class="col-sm-12 text-center p-2">
+						<h1>Gnuplot 線 の 色</h1>
+
+	
+	<div class="navi text-center">
+										<a class="badge badge-dark" href="/%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A-%E6%BC%94%E5%A5%8F%E4%BC%9A-%E8%87%AA%E7%B2%9B.html">新型コロナ 演奏会 自粛</a>
+											<a class="badge badge-warning" href="/6-%E8%89%B2-%E8%9B%8D%E5%85%89-%E3%83%9A%E3%83%B3-%E3%81%A7-%E3%82%8F%E3%81%8B%E3%82%8B-%E7%B5%8C%E6%B8%88.html">6 色 蛍光 ペン で わかる 経済</a>
+											<a class="badge badge-info" href="/%E9%BB%84%E9%87%91%E5%AE%9D%E7%AE%B1-%E3%82%B3%E3%83%AD%E3%83%8A%E6%B9%96.html">黄金宝箱 コロナ湖</a>
+											<a class="badge badge-dark" href="/4-%E8%89%B2-%E3%83%9C%E3%83%BC%E3%83%AB%E3%83%9A%E3%83%B3-%E6%A7%8B%E9%80%A0.html">4 色 ボールペン 構造</a>
+											<a class="badge badge-success" href="/%E6%98%A5-%E8%B2%A1%E5%B8%83-%E9%A2%A8%E6%B0%B4-%E8%89%B2.html">春 財布 風水 色</a>
+											<a class="badge badge-light" href="/%E3%81%A8-%E3%81%86%E3%82%81%E3%81%84-%E8%89%B2-%E7%B3%B8-%E9%9B%BB%E8%A9%B1-%E7%B5%90%E6%9C%AB.html">と うめい 色 糸 電話 結末</a>
+											<a class="badge badge-info" href="/javascript-%E8%89%B2-%E3%82%92-%E5%A4%89%E3%81%88%E3%82%8B.html">javascript 色 を 変える</a>
+											<a class="badge badge-danger" href="/%E3%83%AC%E3%82%B8%E3%83%B3-%E7%9D%80%E8%89%B2-%E3%81%A8%E3%81%AF.html">レジン 着色 とは</a>
+											<a class="badge badge-light" href="/%E5%A5%88%E8%89%AF%E6%A1%9C%E4%BA%95%E3%81%AE%E3%81%9E%E3%81%BF%E8%A8%BA%E7%99%82%E6%89%80%E3%82%B3%E3%83%AD%E3%83%8A.html">奈良桜井のぞみ診療所コロナ</a>
+											<a class="badge badge-dark" href="/%E3%81%B5%E3%81%9F-%E3%81%88-%E3%82%92-%E3%83%AA%E3%83%A1%E3%82%A4%E3%82%AF-%E5%BD%B1-%E8%89%B2-%E3%83%A9%E3%82%A4%E3%83%8A%E3%83%BC.html">ふた え を リメイク 影 色 ライナー</a>
+											<a class="badge badge-danger" href="/%E3%82%A2%E3%82%A6%E3%83%87%E3%82%A3-a4-%E4%BA%BA%E6%B0%97-%E8%89%B2.html">アウディ a4 人気 色</a>
+											<a class="badge badge-primary" href="/%E3%82%AA%E3%83%AA%E3%83%B3%E3%83%94%E3%83%83%E3%82%AF-%E8%89%B2-%E3%81%AE-%E6%84%8F%E5%91%B3.html">オリンピック 色 の 意味</a>
+											<a class="badge badge-light" href="/excel-%E6%9D%A1%E4%BB%B6-%E4%BB%98%E3%81%8D-%E6%9B%B8%E5%BC%8F-%E8%89%B2-%E3%82%92-%E5%A4%89%E3%81%88%E3%82%8B.html">excel 条件 付き 書式 色 を 変える</a>
+											<a class="badge badge-light" href="/%E5%B8%83-%E7%9D%80%E8%89%B2-%E6%8F%8F%E7%94%BB%E6%89%8B%E6%B3%95.html">布 着色 描画手法</a>
+											<a class="badge badge-danger" href="/%E9%80%80%E8%81%B7-%E5%B1%8A-%E5%B0%81%E7%AD%92-%E3%81%AE-%E8%89%B2.html">退職 届 封筒 の 色</a>
+						</div>
+<center>
+	<script type="text/javascript">
+	atOptions = {
+		'key' : 'a7e6ae4bcf1c49afa3b184d0c694ad6c',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://magnificentmanlyyeast.com/a7e6ae4bcf1c49afa3b184d0c694ad6c/invoke.js"></scr' + 'ipt>');
+</script>
+		
+	</center>
+					
+				</div>
+			</div>
+			<div class="row content mb-4">
+				<div class="col-md-12">					
+					
+	
+	<div class="card-columns">
+						
+	  <div class='card'>
+	  	<a href="http://ayapin-film.sakura.ne.jp/Gnuplot/Primer/Misc/colornames.png" data-lightbox="roadtrip" data-title="Gnuplot S Primer">
+						<img class="card-img" src="http://ayapin-film.sakura.ne.jp/Gnuplot/Primer/Misc/colornames.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF1j0NkYeNAMZiXtZ19dNyO3ABJ5Q1cxKyns9XOMCOF7k1HRDkbZFSXjAxnpfSGceB_OU';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Gnuplot S Primer
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://ayapin-film.sakura.ne.jp/Gnuplot/Primer/Misc/colorseq.png" data-lightbox="roadtrip" data-title="Gnuplot S Primer">
+						<img class="card-img" src="http://ayapin-film.sakura.ne.jp/Gnuplot/Primer/Misc/colorseq.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzAHydAXPZGyDjeio1UgMzciaID97Cke2WWf7JSme6YzKa2UaVuz-WO7xo78l2KK6QmSo';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Gnuplot S Primer
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/gnuplot/img/colorname-list.png" data-lightbox="roadtrip" data-title="Gnuplotで使われている色名の一覧を作る 米澤進吾 ホームページ">
+						<img class="card-img" src="https://ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/gnuplot/img/colorname-list.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp3Y_6nCTjHgQthr0_VHWb6VpbjCL8T-N3S6ZeSLMsE3bKY1jt9nMfMeNzhBwHmhD3Az4';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Gnuplotで使われている色名の一覧を作る 米澤進吾 ホームページ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/gnuplot/img/testterminal_001.png" data-lightbox="roadtrip" data-title="ポイントや線や色の一覧を作る 米澤進吾 ホームページ">
+						<img class="card-img" src="https://ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/gnuplot/img/testterminal_001.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3zq2fdWQ9mh62PVZLybXoKEkMM9a0x1f2DUNv4JGqRO7p5WB1nRx-4M6njIBRk1-06js';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				ポイントや線や色の一覧を作る 米澤進吾 ホームページ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/gnuplot/img/testterminal_002.png" data-lightbox="roadtrip" data-title="ポイントや線や色の一覧を作る 米澤進吾 ホームページ">
+						<img class="card-img" src="https://ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/gnuplot/img/testterminal_002.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSQUdTeSTylIAJt9LFeMx3xj-F8LO_QFO5lOm-xTrUIY1AkoM04FwOKifXWiduHGgvA1E';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				ポイントや線や色の一覧を作る 米澤進吾 ホームページ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://ayapin-film.sakura.ne.jp/Gnuplot/Primer/Misc/marks_ps.png" data-lightbox="roadtrip" data-title="Gnuplot S Primer">
+						<img class="card-img" src="http://ayapin-film.sakura.ne.jp/Gnuplot/Primer/Misc/marks_ps.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL0yqukUomW0UwAS-8ttPLzRUnijbJb-G3XedF23Kxj8Yu5PH4nbXKfJHQH0iNW-VzXAo';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Gnuplot S Primer
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+				<div class='card'>	
+			<div class="d-block p-4">
+	
+</div>		  	
+		  	<h3 class="h6 p-2"><b></b></h3>
+					</div>
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.nakamuri.info/mw/images/7/70/%E7%B7%9A%E7%A8%AE%E3%82%92%E6%8C%87%E5%AE%9A%E3%81%99%E3%82%8B03.png" data-lightbox="roadtrip" data-title="線種を指定する Tknotebook">
+						<img class="card-img" src="https://www.nakamuri.info/mw/images/7/70/%E7%B7%9A%E7%A8%AE%E3%82%92%E6%8C%87%E5%AE%9A%E3%81%99%E3%82%8B03.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkLXf5RWDd9jXpKg5AzVVTceuvokuxkR5S2Uv_Z9L_wUQwzqoladZZ3MUm8s3nQQo2gjU';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				線種を指定する Tknotebook
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://blog-imgs-33.fc2.com/a/c/t/activecontour/20090830180102ac3.jpg" data-lightbox="roadtrip" data-title="趣味memo Gnuplot 線の色を指定する">
+						<img class="card-img" src="http://blog-imgs-33.fc2.com/a/c/t/activecontour/20090830180102ac3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT56MqyYYKESyjR1bbJTKtcwPF2I6w9wzeuJyxtpkePhgLyyRItu8t_hS3OLAmdbowmhvk';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				趣味memo Gnuplot 線の色を指定する
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://4.bp.blogspot.com/-Hjl2FSbmSE8/XYhFuTbIlqI/AAAAAAAAAyI/XsG0DfQZJpwGjvwvati8GDsxcbKTSzKCACPcBGAYYCw/w680/gradient-single.png" data-lightbox="roadtrip" data-title="Gnuplot でプロットの色をグラデーションで変えたい">
+						<img class="card-img" src="https://4.bp.blogspot.com/-Hjl2FSbmSE8/XYhFuTbIlqI/AAAAAAAAAyI/XsG0DfQZJpwGjvwvati8GDsxcbKTSzKCACPcBGAYYCw/w680/gradient-single.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5ZZ4fkU_bOfPdS0Jz7DA_6HuNUFr1drh4OxGtl7op_xraOrqygR9_bZBms5c7BvVxfLo';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Gnuplot でプロットの色をグラデーションで変えたい
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www2.ccs.tsukuba.ac.jp/Astro/Members/kirihara/gnuplot_src/colorname-list2.png" data-lightbox="roadtrip" data-title="Gnuplot">
+						<img class="card-img" src="https://www2.ccs.tsukuba.ac.jp/Astro/Members/kirihara/gnuplot_src/colorname-list2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDKdHsjxMvFHz98Wd1XlZLTxBPlMkrNQh2dNSqwxBIvYsY4nyGTHUO2IrE5zgAF7EZMBU';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Gnuplot
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://ayapin-film.sakura.ne.jp/Gnuplot/Primer/Misc/marks_cairo.png" data-lightbox="roadtrip" data-title="Gnuplot S Primer">
+						<img class="card-img" src="http://ayapin-film.sakura.ne.jp/Gnuplot/Primer/Misc/marks_cairo.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7YDTNT6BFKSsIjErpnLtudOG53sfEPOx6l3FHAmx5t2JcAORuxgGIl1NAQNvAov5ZEWU';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Gnuplot S Primer
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/gnuplot/img/version5_004.png" data-lightbox="roadtrip" data-title="Gnuplot Version 5 について 米澤進吾 ホームページ">
+						<img class="card-img" src="https://ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/gnuplot/img/version5_004.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRni3ntRnvsUissxkpMc6oAF-YDCKzRO-BY_cbkA_BBFgfIxDb840Kq7bSdOX13HZVLAF4';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Gnuplot Version 5 について 米澤進吾 ホームページ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://member.ipmu.jp/yuki.moritani/etc/memo/gnuplot_points.png" data-lightbox="roadtrip" data-title="Gnuplot Memo">
+						<img class="card-img" src="http://member.ipmu.jp/yuki.moritani/etc/memo/gnuplot_points.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPEz8LYqFOnZsZLGjS5ZO4G9_pTgYm-FEDDpH2bKvfJiGkTHbNHW9wbIVX4HrvY8P_DGE';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Gnuplot Memo
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://4.bp.blogspot.com/-08w0FLNNPug/XA9RFrMY1jI/AAAAAAAAJQI/knplqQxgdjc9GTpAsRnBMvshqnZgshLuQCLcBGAs/s1600/66-75.png" data-lightbox="roadtrip" data-title="Gnuplotでプロットなどの色をcolornameの指定で変更する">
+						<img class="card-img" src="https://4.bp.blogspot.com/-08w0FLNNPug/XA9RFrMY1jI/AAAAAAAAJQI/knplqQxgdjc9GTpAsRnBMvshqnZgshLuQCLcBGAs/s1600/66-75.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcyWbANjL6WNg-nx2j7_8hOaIXTYwwA4Hmy7_foHklqUZRljwT06YYv9s2PJY6NFyb7LY';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Gnuplotでプロットなどの色をcolornameの指定で変更する
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://www.yamamo10.jp/yamamoto/comp/graph/gnuplot/figure/line/test_line_ecs.gif" data-lightbox="roadtrip" data-title="Gnuplot 先の種類">
+						<img class="card-img" src="http://www.yamamo10.jp/yamamoto/comp/graph/gnuplot/figure/line/test_line_ecs.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxeKlNpmjxl8w26CmfnS3rFGwpnSxSia4xIjpnT4MldZtpRSz-7dyDkMMxh-8Qd4a2ML0';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Gnuplot 先の種類
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://www.yamamo10.jp/yamamoto/comp/gnuplot/line/figure/line_type_x11.gif" data-lightbox="roadtrip" data-title="Gnuplotの線の種類">
+						<img class="card-img" src="http://www.yamamo10.jp/yamamoto/comp/gnuplot/line/figure/line_type_x11.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtnGFo5FTVYmvz7L62R98rvF6AhQn7zOssq2mNr_uPYZrereXWLRnAxfwS5sz1E9b6REc';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Gnuplotの線の種類
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.nakamuri.info/mw/images/a/a4/%E7%B7%9A%E7%A8%AE%E3%82%92%E6%8C%87%E5%AE%9A%E3%81%99%E3%82%8B06.png" data-lightbox="roadtrip" data-title="線種を指定する Tknotebook">
+						<img class="card-img" src="https://www.nakamuri.info/mw/images/a/a4/%E7%B7%9A%E7%A8%AE%E3%82%92%E6%8C%87%E5%AE%9A%E3%81%99%E3%82%8B06.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ98vQgIR2e01ZPWFpkVPU77mVg2SiebvPN0w1MBuhEEQhIaStvGJPSKS-Kzpr--sMB8lY';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				線種を指定する Tknotebook
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://freeplanets.ship.jp/Gnuplot/Files/Figs/Plot-3_w_l.png" data-lightbox="roadtrip" data-title="Gnuplot Tutor">
+						<img class="card-img" src="http://freeplanets.ship.jp/Gnuplot/Files/Figs/Plot-3_w_l.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeGR2KmeVnM5vIyiGUKgAu8o06xvyK4gUJJdVUb354kkRFxmmkX2ZtzVSduVUDrcs4ylU';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Gnuplot Tutor
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://slpr.sakura.ne.jp/qp/wp-content/uploads/2015/05/overview.png" data-lightbox="roadtrip" data-title="Gnuplotのカラーマップ シキノート">
+						<img class="card-img" src="https://slpr.sakura.ne.jp/qp/wp-content/uploads/2015/05/overview.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUGFqQmT5XFqABTCGwksOKh8rz3qYTP9xylgMgmuXcm-j17uBHbyFJ1IXBBU_fIrtLF8I';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Gnuplotのカラーマップ シキノート
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://dsl4.eee.u-ryukyu.ac.jp/DOCS/gnuplot/img86.png" data-lightbox="roadtrip" data-title="線の種類を変える">
+						<img class="card-img" src="http://dsl4.eee.u-ryukyu.ac.jp/DOCS/gnuplot/img86.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDc2NzqMj9iywzXqQmNtmc3OYEAMp8M5GqK2Rko-vQVEnXb83S65Wfwz8eu4us_5Wxht8';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				線の種類を変える
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://www.proton.jp/main/apps/image/gnuplot/gnuplot01.png" data-lightbox="roadtrip" data-title="Proton Jp Gnuplotのグラフを調節するには">
+						<img class="card-img" src="http://www.proton.jp/main/apps/image/gnuplot/gnuplot01.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLllToHImHNEhjMLGZiJ9oi6D3PMOSXgytVQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Proton Jp Gnuplotのグラフを調節するには
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://lowrank.net/gnuplot/fig/sample9.6b.png" data-lightbox="roadtrip" data-title="Gnuplot Misc 4">
+						<img class="card-img" src="http://lowrank.net/gnuplot/fig/sample9.6b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ7etWHwIXPjvOj_q8baI-Wvk-wGwpthhAaA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Gnuplot Misc 4
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://member.ipmu.jp/yuki.moritani/etc/memo/Gnuplot_colorframe.png" data-lightbox="roadtrip" data-title="Gnuplot Memo">
+						<img class="card-img" src="http://member.ipmu.jp/yuki.moritani/etc/memo/Gnuplot_colorframe.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdHL2by-my3jk76CNxJLbMmx14Li8z6wXELg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Gnuplot Memo
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://1.bp.blogspot.com/-uo7SzOQFmdg/VrLEs1jy3zI/AAAAAAAAibQ/9Sge-b4s8IY/s1600/test.png" data-lightbox="roadtrip" data-title="Ekbo Gnuplotで使える色">
+						<img class="card-img" src="http://1.bp.blogspot.com/-uo7SzOQFmdg/VrLEs1jy3zI/AAAAAAAAibQ/9Sge-b4s8IY/s1600/test.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHzKNxTgd0mgvnwmy_N-1v2mn_UQZb5JVcGw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Ekbo Gnuplotで使える色
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="/search?q=gnuplot+%E8%89%B2&amp;tbm=isch" data-lightbox="roadtrip" data-title="1">
+						<img class="card-img" src="/search?q=gnuplot+%E8%89%B2&amp;tbm=isch" onerror="this.onerror=null;this.src='/search?q=gnuplot+%E8%89%B2&amp;tbm=isch';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				1
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://graph.pc-physics.com/image/style1.png" data-lightbox="roadtrip" data-title="グラフを線や点でプロット">
+						<img class="card-img" src="http://graph.pc-physics.com/image/style1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMbhlzznVMtVk0w-qX-INBnFbU9xhagEwrrQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				グラフを線や点でプロット
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://dsl4.eee.u-ryukyu.ac.jp/DOCS/gnuplot/img69.png" data-lightbox="roadtrip" data-title="線と点を重ねる">
+						<img class="card-img" src="http://dsl4.eee.u-ryukyu.ac.jp/DOCS/gnuplot/img69.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg1QL6bm-yQgAKe7R496gbkx_5whE1cBfwWA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				線と点を重ねる
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://lowrank.net/gnuplot/fig/sample6.7a.png" data-lightbox="roadtrip" data-title="Gnuplot Plotpm3d">
+						<img class="card-img" src="http://lowrank.net/gnuplot/fig/sample6.7a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCNcthO3409ij2mi0qsbNaS0vZAJEwx3ydhQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Gnuplot Plotpm3d
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.xmisao.com/assets/2013_09_09_awesome_graph.png" data-lightbox="roadtrip" data-title="Gnuplotのイケてるカラーセット ぺけみさお">
+						<img class="card-img" src="https://www.xmisao.com/assets/2013_09_09_awesome_graph.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJuVQod-qA7HAi8MPfhr7xXyM_Smix89DNTg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Gnuplotのイケてるカラーセット ぺけみさお
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://cympfh.cc/gnuplot/3d.heatmap.png" data-lightbox="roadtrip" data-title="Gnuplot">
+						<img class="card-img" src="https://cympfh.cc/gnuplot/3d.heatmap.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXELY6Aedoy_KPlQR_b6c6o1OBkc1rnuZCfQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Gnuplot
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://www.kotsuki-shunji.com/intro/subgif/gnutemp01.bmp" data-lightbox="roadtrip" data-title="Gnuplotのテンプテート">
+						<img class="card-img" src="http://www.kotsuki-shunji.com/intro/subgif/gnutemp01.bmp" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9ZnphyuHbKSMO6CF59LhFG_TgyuoZsNePqA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Gnuplotのテンプテート
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://www.yamamo10.jp/yamamoto/comp/gnuplot/line/figure/test_line_md.gif" data-lightbox="roadtrip" data-title="Gnuplotの線の種類">
+						<img class="card-img" src="http://www.yamamo10.jp/yamamoto/comp/gnuplot/line/figure/test_line_md.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS7ZwV3TdjCuKRYwHb0T_vYLuClA6QhFdG7g';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Gnuplotの線の種類
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://slpr.sakura.ne.jp/qp/wp-content/uploads/2016/09/line_gra_c.jpg" data-lightbox="roadtrip" data-title="線とグラデーション Gnuplot シキノート">
+						<img class="card-img" src="https://slpr.sakura.ne.jp/qp/wp-content/uploads/2016/09/line_gra_c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpBvnuOuQCCOmt3JYlayEu_U3-CAGCuomQyQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				線とグラデーション Gnuplot シキノート
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+		
+	</div>
+
+		 
+		<div class="d-block mt-4 p-3">
+
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+		</div>
+		
+				</div>
+				<div class="col-sm-12 widget">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center py-4">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+					
+				</div>
+			</div>
+		</main>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+		
+		<!-- Footer CSS JS -->
+<!-- Statcounter code for 2_mamakamaa https://mamakamaa.blogspot.com/ on Blogger -->
+<script type="text/javascript">
+//<![CDATA[
+var sc_project=12506186; 
+var sc_invisible=1; 
+var sc_security="04fde361"; 
+//]]>
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter_xhtml.js" async></script>
+
+		
+		
+		
+			</body>
+</html>

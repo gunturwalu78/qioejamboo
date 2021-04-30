@@ -1,0 +1,689 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+		<link href="https://fonts.googleapis.com/css?family=Mr+Dafoe" rel="stylesheet" type="text/css">
+
+		<style type="text/css">
+			html,body{font-family:"Open Sans",Arial,sans-serif;font-size:14px;font-weight:400;background:#f3f3f3 url(https://img-blog.csdnimg.cn/20200305170153492.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2prbHdhbg==,size_16,color_FFFFFF,t_70
+) no-repeat center center fixed;background-size:cover;height:100%}#title{font-family:"Mr Dafoe",Times,serif;font-size:34px;background:rgba(255,255,255,.8);margin-bottom:34px}.header{padding-bottom:13px;margin-bottom:13px;border-bottom:1px solid #eee}a{color:#26ADE4;text-decoration:none}#title a{color:#333;margin-left:21px}#title a:hover{text-decoration:none;color:#26ADE4}.sidebar ul{margin:0;padding:0}.sidebar ul li{list-style:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0 13px 0;padding:13px}.navi a{margin:5px 2px;font-size:95%}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}			
+		</style>
+
+		<title>Osu着色器效果</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "James"
+  },
+  "headline": "Osu着色器效果",
+  "datePublished": "2021-04-30",
+  "image": [https://learnopengl-cn.github.io/img/04/09/geometry_shader_normals.png,https://learnopengl-cn.github.io/img/04/09/geometry_shader_lines.png,https://static.wixstatic.com/media/ba743f_93a4ba72e6cb4bb0a63dabd3162a0146~mv2.jpg/v1/fill/w_551,h_252,al_c,q_90/ba743f_93a4ba72e6cb4bb0a63dabd3162a0146~mv2.jpg],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=osu着色器效果",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+		<!-- Head tag Code -->	</head>
+	<body>
+		<header class="bg-white fixed-top">			
+			<nav class="navbar navbar-light bg-white mb-0">
+				<div class="container justify-content-center justify-content-sm-between">	
+				  <a href="/" title="Blog" class="navbar-brand mb-1">Blog</a>
+				  				</div>			  
+			</nav>				
+		</header>
+		<main class="main container bg-white">
+			<div class="col-md-12 my-4" align="center">
+				<div class="d-block p-4">
+	<br/><center>
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'd232bd6e1c0d85f8dc8c8119bc5f5a1e',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://magnificentmanlyyeast.com/d232bd6e1c0d85f8dc8c8119bc5f5a1e/invoke.js"></scr' + 'ipt>');
+</script></center><br/>
+</div>			</div>
+			<div class="row header">
+				<div class="col-sm-12 text-center p-2">
+						<h1>Osu着色器效果</h1>
+
+	
+	<div class="navi text-center">
+										<a class="badge badge-secondary" href="/%E6%A8%B9%E8%84%82-%E7%B2%98%E5%9C%9F-%E3%82%B3%E3%82%B9%E3%83%A2%E3%82%B9-%E7%9D%80%E8%89%B2.html">樹脂 粘土 コスモス 着色</a>
+											<a class="badge badge-dark" href="/701-%E7%B3%BB-%E7%A7%8B%E7%94%B0-%E8%89%B2.html">701 系 秋田 色</a>
+											<a class="badge badge-dark" href="/%E9%AF%9B-%E3%83%A9%E3%83%90-%E3%83%8D%E3%82%AF%E3%82%BF%E3%82%A4-%E8%89%B2.html">鯛 ラバ ネクタイ 色</a>
+											<a class="badge badge-primary" href="/%E7%99%BD%E3%81%84-%E9%83%A8%E5%B1%8B-%E5%AE%B6%E5%85%B7-%E3%81%AE-%E8%89%B2.html">白い 部屋 家具 の 色</a>
+											<a class="badge badge-warning" href="/3-%E8%89%B2-%E7%AB%AF%E5%AD%90-%E3%81%8B%E3%82%89-hdmi.html">3 色 端子 から hdmi</a>
+											<a class="badge badge-secondary" href="/%E6%83%85%E8%89%B2-%E5%B0%8F%E8%AA%AA-%E5%AE%B6.html">情色 小說 家</a>
+											<a class="badge badge-warning" href="/%E3%83%AC%E3%83%B4%E3%82%A3%E3%82%A2-%E3%83%8E%E3%82%B9%E3%82%BF%E3%83%AB%E3%82%B8%E3%82%A2-%E7%9D%80%E8%89%B2-%E7%9B%B4%E5%BE%84.html">レヴィア ノスタルジア 着色 直径</a>
+											<a class="badge badge-dark" href="/%E6%AF%9B%E7%B3%B8-%E3%83%9D%E3%83%B3%E3%83%9D%E3%83%B3-%E4%BD%9C%E3%82%8A%E6%96%B9-2-%E8%89%B2.html">毛糸 ポンポン 作り方 2 色</a>
+											<a class="badge badge-light" href="/excel-%E6%9D%A1%E4%BB%B6-%E6%96%87%E5%AD%97-%E8%89%B2.html">excel 条件 文字 色</a>
+											<a class="badge badge-secondary" href="/%E7%9D%80%E8%89%B2-%E8%89%B2%E3%81%AE%E6%BF%83%E6%B7%A1-%E9%80%8F%E6%98%8E%E5%BA%A6.html">着色 色の濃淡 透明度</a>
+											<a class="badge badge-dark" href="/%E3%83%80%E3%82%A6%E3%83%B3-%E3%82%B8%E3%83%A3%E3%82%B1%E3%83%83%E3%83%88-%E8%89%B2-%E3%81%8A%E3%81%99%E3%81%99%E3%82%81-%E3%83%AC%E3%83%87%E3%82%A3%E3%83%BC%E3%82%B9.html">ダウン ジャケット 色 おすすめ レディース</a>
+											<a class="badge badge-info" href="/%E3%83%A2%E3%83%86-%E3%82%8B-%E9%AB%AA-%E3%81%AE-%E8%89%B2.html">モテ る 髪 の 色</a>
+											<a class="badge badge-success" href="/%E3%82%B9%E3%83%A2%E3%83%BC%E3%82%AD%E3%83%BC-%E3%83%A9%E3%83%99%E3%83%B3%E3%83%80%E3%83%BC-%E9%AB%AA-%E8%89%B2.html">スモーキー ラベンダー 髪 色</a>
+											<a class="badge badge-warning" href="/%E3%82%B9%E3%82%AF%E3%82%A3%E3%83%BC%E3%82%BA-%E7%9D%80%E8%89%B2%E5%89%A4-%E7%99%BE%E5%9D%87-%E4%BD%9C%E3%82%8A%E6%96%B9.html">スクィーズ 着色剤 百均 作り方</a>
+											<a class="badge badge-info" href="/mac-%E3%82%A2%E3%82%A4-%E3%82%B7%E3%83%A3%E3%83%89%E3%82%A6-%E3%81%8A%E3%81%99%E3%81%99%E3%82%81-%E8%89%B2.html">mac アイ シャドウ おすすめ 色</a>
+						</div>
+<center>
+	<script type="text/javascript">
+	atOptions = {
+		'key' : 'a7e6ae4bcf1c49afa3b184d0c694ad6c',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://magnificentmanlyyeast.com/a7e6ae4bcf1c49afa3b184d0c694ad6c/invoke.js"></scr' + 'ipt>');
+</script>
+		
+	</center>
+					
+				</div>
+			</div>
+			<div class="row content mb-4">
+				<div class="col-md-12">					
+					
+	
+	<div class="card-columns">
+						
+	  <div class='card'>
+	  	<a href="http://i2.hdslb.com/bfs/archive/87301db3a34a6f4f9ee19bfc8d14b86b1c98f321.jpg" data-lightbox="roadtrip" data-title="4kdsr 240hz Osu Mp Omoled Karera Senbon Zakura 着色器 开启 Rtx2070 哔哩哔哩 つロ干杯 Bilibili">
+						<img class="card-img" src="http://i2.hdslb.com/bfs/archive/87301db3a34a6f4f9ee19bfc8d14b86b1c98f321.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnsqjCrGXkh4dRvckTubK-SflJgINksZDyM5Se2tQ2rlTBfeE4-IDK0HHNt5ByqiM-kMY';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				4kdsr 240hz Osu Mp Omoled Karera Senbon Zakura 着色器 开启 Rtx2070 哔哩哔哩 つロ干杯 Bilibili
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://open.gl/media/img/c7_result.png" data-lightbox="roadtrip" data-title="几何着色器 道路与梦想 Csdn博客 几何着色器">
+						<img class="card-img" src="https://open.gl/media/img/c7_result.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGr_oExqr44IOnP7yIuoASBH6_skCYslDnFxsh1-k9KZMwCQZT8wmZmFjCbFklKCF-c_k';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				几何着色器 道路与梦想 Csdn博客 几何着色器
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://img-blog.csdnimg.cn/20200305163525481.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2prbHdhbg==,size_16,color_FFFFFF,t_70" data-lightbox="roadtrip" data-title="学习opengl Es For Android 二十四 几何着色器 Chends Csdn博客">
+						<img class="card-img" src="https://img-blog.csdnimg.cn/20200305163525481.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2prbHdhbg==,size_16,color_FFFFFF,t_70" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFw9KUgATxRSOgGBU42Qc8AGecAZ-S7mBRzfEQtPraqwzSkC11vlsAjtLjDKbKNYCKrT8';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				学习opengl Es For Android 二十四 几何着色器 Chends Csdn博客
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://img-blog.csdnimg.cn/20200305170153492.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2prbHdhbg==,size_16,color_FFFFFF,t_70" data-lightbox="roadtrip" data-title="学习opengl Es For Android 二十四 几何着色器 Chends Csdn博客">
+						<img class="card-img" src="https://img-blog.csdnimg.cn/20200305170153492.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2prbHdhbg==,size_16,color_FFFFFF,t_70" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZLiHlZ4H2bCq3k5dibW7n0adD7jR-yz4GDBeptR0ianECgGTVTBW2sHsby4Z0NI90Sd8';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				学习opengl Es For Android 二十四 几何着色器 Chends Csdn博客
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://raw.githubusercontent.com/Sendevia/sendevia.github.io/master/assets/images/s1_hit_circle_0.gif" data-lightbox="roadtrip" data-title="Aincradmix 一个有着刀剑神域ui风格的osu 全局皮肤项目 Aincradmix">
+						<img class="card-img" src="https://raw.githubusercontent.com/Sendevia/sendevia.github.io/master/assets/images/s1_hit_circle_0.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOTaKeiJrU9W964CJe3Kvod0-AsjhIgsD8Cl_4vwO7u_-RpoD-pH9sku6dDaPiehRl_uE';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Aincradmix 一个有着刀剑神域ui风格的osu 全局皮肤项目 Aincradmix
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://img-blog.csdn.net/20180817150718192?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2FsZXgxOTkyYXpo/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" data-lightbox="roadtrip" data-title="Opengl 几何着色器 劫持顶点的家伙 Alex1992azh的博客 Csdn博客">
+						<img class="card-img" src="https://img-blog.csdn.net/20180817150718192?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2FsZXgxOTkyYXpo/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ9BommA1uCnN8b2V9EOC8ahl39FAK7gFohG3IgMygD1F2uIXExBVj3Hcr5KetJ4K3vhE';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Opengl 几何着色器 劫持顶点的家伙 Alex1992azh的博客 Csdn博客
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+				<div class='card'>	
+			<div class="d-block p-4">
+	
+</div>		  	
+		  	<h3 class="h6 p-2"><b></b></h3>
+					</div>
+		
+						
+	  <div class='card'>
+	  	<a href="https://upload.cc/i1/2019/03/12/m6GOg4.jpg" data-lightbox="roadtrip" data-title="攻略 Osu 註冊教學 遊戲設定篇 Osu 哈啦板 巴哈姆特">
+						<img class="card-img" src="https://upload.cc/i1/2019/03/12/m6GOg4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkZfdn9Y2iDPr10gO_pl1RUc0w3zM7eylTXydVNPZVhmjOAlNinqbvhfgyFTKhMgTiE2E';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				攻略 Osu 註冊教學 遊戲設定篇 Osu 哈啦板 巴哈姆特
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://raw.githubusercontent.com/Sendevia/sendevia.github.io/master/assets/images/s0_logo_big.png" data-lightbox="roadtrip" data-title="Aincradmix 一个有着刀剑神域ui风格的osu 全局皮肤项目 Aincradmix">
+						<img class="card-img" src="https://raw.githubusercontent.com/Sendevia/sendevia.github.io/master/assets/images/s0_logo_big.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlpFTrg7HYhwbiRm6wsyLhQ-f4AgYhvx4eBWGU7NAlt9EcJ77qp37hMPMOH9DJ6YHTW60';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Aincradmix 一个有着刀剑神域ui风格的osu 全局皮肤项目 Aincradmix
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://learnopengl-cn.github.io/img/04/09/geometry_shader_normals.png" data-lightbox="roadtrip" data-title="Opengl学习笔记一之高级opengl篇九几何着色器 飞飞飞的博客 Csdn博客">
+						<img class="card-img" src="https://learnopengl-cn.github.io/img/04/09/geometry_shader_normals.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRShHCprk0mvgfr_FYVAfW-nPnRgSSWNeDYhPyAKaB3Za81roEPkA9rypXWUfqYPY6JTuc';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Opengl学习笔记一之高级opengl篇九几何着色器 飞飞飞的博客 Csdn博客
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://imgsa.baidu.com/forum/w%3D580/sign=53ef7e8cc88065387beaa41ba7dfa115/df09663e6709c93db033f5359d3df8dcd30054c9.jpg" data-lightbox="roadtrip" data-title="图片 重制 Standard模式皮肤教程 Osu吧 百度贴吧">
+						<img class="card-img" src="https://imgsa.baidu.com/forum/w%3D580/sign=53ef7e8cc88065387beaa41ba7dfa115/df09663e6709c93db033f5359d3df8dcd30054c9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmhZe9cK5FBc-mkMFsvojMX91hmuTWgT3KT9KpE0UT37kX9f0KRsMyzChs0wwihc5RXrk';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				图片 重制 Standard模式皮肤教程 Osu吧 百度贴吧
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://img-blog.csdnimg.cn/20200306134212770.gif" data-lightbox="roadtrip" data-title="学习opengl Es For Android 二十四 几何着色器 Chends Csdn博客">
+						<img class="card-img" src="https://img-blog.csdnimg.cn/20200306134212770.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtj-cu8Aad2ZrN5CCf8f4SDZG3Ds2ZV1bHWE6CN0Ju5po-9QDllIMZTUT5v1My_HBusE8';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				学习opengl Es For Android 二十四 几何着色器 Chends Csdn博客
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://imgsa.baidu.com/forum/w%3D580/sign=9b6b070ec1cec3fd8b3ea77de689d4b6/5a1677061d950a7b2071b40608d162d9f3d3c94e.jpg" data-lightbox="roadtrip" data-title="图片 重制 Standard模式皮肤教程 Osu吧 百度贴吧">
+						<img class="card-img" src="https://imgsa.baidu.com/forum/w%3D580/sign=9b6b070ec1cec3fd8b3ea77de689d4b6/5a1677061d950a7b2071b40608d162d9f3d3c94e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ-OiSDDyLqmP8ODZ0RKFJngpxcmwKGiKih_ykNtx1YPo24C3X1vSg0elZClU_aENYeDY';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				图片 重制 Standard模式皮肤教程 Osu吧 百度贴吧
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://truth.bahamut.com.tw/s01/201710/d60dacf4596cae535616951ae2f039cc.JPG" data-lightbox="roadtrip" data-title="問題 打擊完之後會有圈圈請問我要怎關掉 Osu 哈啦板 巴哈姆特">
+						<img class="card-img" src="https://truth.bahamut.com.tw/s01/201710/d60dacf4596cae535616951ae2f039cc.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStEYpq-9DJQ8mbnmPcFC8QB2lnkny_KJHHVViMATOx1VqJtNYVKHnZF-2CwCAgdrTryU8';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				問題 打擊完之後會有圈圈請問我要怎關掉 Osu 哈啦板 巴哈姆特
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://raw.githubusercontent.com/Sendevia/sendevia.github.io/master/assets/images/s0_logo.png" data-lightbox="roadtrip" data-title="Github Sendevia Aincradmix 一个有着刀剑神域ui风格的osu 皮肤项目">
+						<img class="card-img" src="https://raw.githubusercontent.com/Sendevia/sendevia.github.io/master/assets/images/s0_logo.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcYGfrc7VC0-lSZ1CSuXZpQY-bm8bGbelGVVINqisDzUamNAQtLCj4GanWsvwsGREiLQA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Github Sendevia Aincradmix 一个有着刀剑神域ui风格的osu 皮肤项目
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://img-blog.csdn.net/20170217211105049?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvanh3MTY3/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" data-lightbox="roadtrip" data-title="Opengl核心技术之几何着色器 海洋个人博客 Csdn博客">
+						<img class="card-img" src="https://img-blog.csdn.net/20170217211105049?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvanh3MTY3/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBuuq6w2DKaI1HJyrujqJV0SUe2NxrGlaQPPevgTQzUi6CKE8mWe90NlWldWGoARcRkRw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Opengl核心技术之几何着色器 海洋个人博客 Csdn博客
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://imgsa.baidu.com/forum/w%3D580/sign=409400e99f16fdfad86cc6e6848e8cea/23e4ffcd7b899e51e8c8c1d640a7d933c9950d48.jpg" data-lightbox="roadtrip" data-title="图片 重制 Standard模式皮肤教程 Osu吧 百度贴吧">
+						<img class="card-img" src="https://imgsa.baidu.com/forum/w%3D580/sign=409400e99f16fdfad86cc6e6848e8cea/23e4ffcd7b899e51e8c8c1d640a7d933c9950d48.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgj0qYIFmvFQ9cuaGZhyLkQVxcEsPGr-44XPG9C2LkVhAmp8zrFttHmPlcmu6wWhUymm0';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				图片 重制 Standard模式皮肤教程 Osu吧 百度贴吧
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://imgsa.baidu.com/forum/w%3D580/sign=450e7ce39113b07ebdbd50003cd59113/c7d6be86c9177f3ed9f507cf72cf3bc79d3d56c9.jpg" data-lightbox="roadtrip" data-title="图片 重制 Standard模式皮肤教程 Osu吧 百度贴吧">
+						<img class="card-img" src="https://imgsa.baidu.com/forum/w%3D580/sign=450e7ce39113b07ebdbd50003cd59113/c7d6be86c9177f3ed9f507cf72cf3bc79d3d56c9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9V47nPEm88WuvTZog_tmoSzyc_ArZhZYzTUP1-86wR6OUPZ52_Ai9LQ_pIeabHbWE2W8';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				图片 重制 Standard模式皮肤教程 Osu吧 百度贴吧
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://img-blog.csdn.net/20170423172036258?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcGFuZGExMjM0bGVl/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" data-lightbox="roadtrip" data-title="使用计算着色器 Compute Shader 模拟粒子效果 Opengl Glsl Shaderjoy 的兴趣技术杂货铺 Csdn博客">
+						<img class="card-img" src="https://img-blog.csdn.net/20170423172036258?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcGFuZGExMjM0bGVl/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnz3pH79XMBxrDtQGhqfNZS03diOvRJ2z-9rjVA_9395VGIzdkGtqGVyJa4roAUPmZT_A';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				使用计算着色器 Compute Shader 模拟粒子效果 Opengl Glsl Shaderjoy 的兴趣技术杂货铺 Csdn博客
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://pic1.cdncl.net/user/Aichi_Chikuwa/common_pic/336ece1b4409367a7126fd5c056be82a.jpg?imageView2/2/w/1280" data-lightbox="roadtrip" data-title="爱知的osu Mania介绍以及起步教程 奶牛关">
+						<img class="card-img" src="https://pic1.cdncl.net/user/Aichi_Chikuwa/common_pic/336ece1b4409367a7126fd5c056be82a.jpg?imageView2/2/w/1280" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHdT8cYIYFUSQ8z_Csr6Ua-cukGqa7If3NPId_1Mitc1YVTn1Lwl0nma2AJhOg2w5d1mI';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				爱知的osu Mania介绍以及起步教程 奶牛关
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://pic2.zhimg.com/v2-6d603d154fff86e63c7c5009eae3cdb1_b.jpg" data-lightbox="roadtrip" data-title="基于unity 引擎的游戏开发进阶之着色器 Shader 入门 图形特效 知乎">
+						<img class="card-img" src="https://pic2.zhimg.com/v2-6d603d154fff86e63c7c5009eae3cdb1_b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBExM3DHN9FQ_C117y6NYeY6eRwr0mOJjREIVz9AIJvBRcGf1pTcwmT6Plfms31es2nJ8';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				基于unity 引擎的游戏开发进阶之着色器 Shader 入门 图形特效 知乎
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://img-blog.csdn.net/20170506094631953?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcGFuZGExMjM0bGVl/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" data-lightbox="roadtrip" data-title="最简单的几何着色器 Geometry Shader 法线和线框的绘制 Opengl Glsl Shaderjoy 的兴趣技术杂货铺 Csdn博客">
+						<img class="card-img" src="https://img-blog.csdn.net/20170506094631953?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcGFuZGExMjM0bGVl/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfcAfQ3g_L9r7fwyElHOQux4EFbh9HDYalpw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				最简单的几何着色器 Geometry Shader 法线和线框的绘制 Opengl Glsl Shaderjoy 的兴趣技术杂货铺 Csdn博客
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://learnopengl-cn.github.io/img/04/09/geometry_shader_lines.png" data-lightbox="roadtrip" data-title="Opengl学习笔记一之高级opengl篇九几何着色器 飞飞飞的博客 Csdn博客">
+						<img class="card-img" src="https://learnopengl-cn.github.io/img/04/09/geometry_shader_lines.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWH6TElI-5otcoU5Ul6OSdUAaR8xbmHx8PWQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Opengl学习笔记一之高级opengl篇九几何着色器 飞飞飞的博客 Csdn博客
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://img-blog.csdn.net/20170423172025346?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcGFuZGExMjM0bGVl/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" data-lightbox="roadtrip" data-title="使用计算着色器 Compute Shader 模拟粒子效果 Opengl Glsl Shaderjoy 的兴趣技术杂货铺 Csdn博客">
+						<img class="card-img" src="https://img-blog.csdn.net/20170423172025346?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcGFuZGExMjM0bGVl/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgZbHTw2kyIFaYCx44llXTsp_0_8ZEQfhYDw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				使用计算着色器 Compute Shader 模拟粒子效果 Opengl Glsl Shaderjoy 的兴趣技术杂货铺 Csdn博客
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://pic1.zhimg.com/80/v2-a563cf52a8f1d08ba73ca34a9427efc0_1440w.jpg" data-lightbox="roadtrip" data-title="基于unity 引擎的游戏开发进阶之着色器 Shader 入门 图形特效 知乎">
+						<img class="card-img" src="https://pic1.zhimg.com/80/v2-a563cf52a8f1d08ba73ca34a9427efc0_1440w.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7PwXJgyd9K8Pv_zcrdQ15HafiSRVhsW9ObQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				基于unity 引擎的游戏开发进阶之着色器 Shader 入门 图形特效 知乎
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://i2.hdslb.com/bfs/archive/b36e937c78d7666d764ae471cd473fa523527990.png" data-lightbox="roadtrip" data-title="Osu 配置测试mili World Execute Me 哔哩哔哩 つロ干杯 Bilibili">
+						<img class="card-img" src="http://i2.hdslb.com/bfs/archive/b36e937c78d7666d764ae471cd473fa523527990.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPyjqX42rh-zw6-0ClPsMrO1tV4dG8HcIU3Q';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Osu 配置测试mili World Execute Me 哔哩哔哩 つロ干杯 Bilibili
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://i.ppy.sh/73c67e7f0d8a12042eba074ef0ce8825bf9ccb5a/68747470733a2f2f666f72756d2d66696c65732e7070792e73682f32323234305f6634633634396535303762346538393962376565353935653936306238393361" data-lightbox="roadtrip" data-title="專輯分享 Sound Horizon Elysion樂園幻想物語組曲 Forum Osu">
+						<img class="card-img" src="https://i.ppy.sh/73c67e7f0d8a12042eba074ef0ce8825bf9ccb5a/68747470733a2f2f666f72756d2d66696c65732e7070792e73682f32323234305f6634633634396535303762346538393962376565353935653936306238393361" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAlqjDs6X5QRH63AU1ArRppiyKeI8qhf1kjg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				專輯分享 Sound Horizon Elysion樂園幻想物語組曲 Forum Osu
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://repository-images.githubusercontent.com/152574473/bf8b3c00-a2a8-11ea-805b-f64f4acd8edc" data-lightbox="roadtrip" data-title="Github Sendevia Aincradmix 一个有着刀剑神域ui风格的osu 皮肤项目">
+						<img class="card-img" src="https://repository-images.githubusercontent.com/152574473/bf8b3c00-a2a8-11ea-805b-f64f4acd8edc" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzCS3nw9ff2lJuZ6K1eiMffJifBQdHGdnR5w';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Github Sendevia Aincradmix 一个有着刀剑神域ui风格的osu 皮肤项目
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://truth.bahamut.com.tw/s01/201907/d48b3bd42f4afaa81ad7995e01f3f121.JPG" data-lightbox="roadtrip" data-title="問題 現在是不是都沒人在玩osu了啊 18 3 17更新於主樓 場外休憩區哈啦板 巴哈姆特">
+						<img class="card-img" src="https://truth.bahamut.com.tw/s01/201907/d48b3bd42f4afaa81ad7995e01f3f121.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrrpIe6MBcHeoPCdwFcknSZx4vsS4MM4IVKA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				問題 現在是不是都沒人在玩osu了啊 18 3 17更新於主樓 場外休憩區哈啦板 巴哈姆特
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://static.wixstatic.com/media/ba743f_93a4ba72e6cb4bb0a63dabd3162a0146~mv2.jpg/v1/fill/w_551,h_252,al_c,q_90/ba743f_93a4ba72e6cb4bb0a63dabd3162a0146~mv2.jpg" data-lightbox="roadtrip" data-title="Unified Shader Works">
+						<img class="card-img" src="https://static.wixstatic.com/media/ba743f_93a4ba72e6cb4bb0a63dabd3162a0146~mv2.jpg/v1/fill/w_551,h_252,al_c,q_90/ba743f_93a4ba72e6cb4bb0a63dabd3162a0146~mv2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrexD6RlvnfhDSTIiUmBnrcoZR7IBs-qEOog';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Unified Shader Works
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://raw.githubusercontent.com/Sendevia/sendevia.github.io/master/assets/images/s0_button_download_1.png" data-lightbox="roadtrip" data-title="Github Sendevia Aincradmix 一个有着刀剑神域ui风格的osu 皮肤项目">
+						<img class="card-img" src="https://raw.githubusercontent.com/Sendevia/sendevia.github.io/master/assets/images/s0_button_download_1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFIFcMqMxFgf8Unon4zOGuvdqO8FM8U3H5TA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Github Sendevia Aincradmix 一个有着刀剑神域ui风格的osu 皮肤项目
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://truth.bahamut.com.tw/s01/201206/e07588e89f424de21e126576e98bc982.JPG" data-lightbox="roadtrip" data-title="關閉惹 場外人的osu 太鼓實況and教學帥哥美女來 間隔2月開啟 場外休憩區哈啦板 巴哈姆特">
+						<img class="card-img" src="https://truth.bahamut.com.tw/s01/201206/e07588e89f424de21e126576e98bc982.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvDLi2uIZl6cG2ASb2FFHzkwgOvbkl3zbCzw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				關閉惹 場外人的osu 太鼓實況and教學帥哥美女來 間隔2月開啟 場外休憩區哈啦板 巴哈姆特
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://static.wixstatic.com/media/ba743f_55a8bc724f3b4a109e0c6be88c4a5284~mv2.png/v1/fill/w_778,h_967,al_c/ba743f_55a8bc724f3b4a109e0c6be88c4a5284~mv2.png" data-lightbox="roadtrip" data-title="Unified Shader Works">
+						<img class="card-img" src="https://static.wixstatic.com/media/ba743f_55a8bc724f3b4a109e0c6be88c4a5284~mv2.png/v1/fill/w_778,h_967,al_c/ba743f_55a8bc724f3b4a109e0c6be88c4a5284~mv2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbz91-8VXyxCwCPgHnY_VioAH-Dd7IE6t8GA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Unified Shader Works
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://pic2.zhimg.com/v2-ee5e982a6a7fa537f989f347bcbb04fd_b.jpg" data-lightbox="roadtrip" data-title="基础渲染系列 二 着色器 知乎">
+						<img class="card-img" src="https://pic2.zhimg.com/v2-ee5e982a6a7fa537f989f347bcbb04fd_b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU_yXZ2lfIX8afEkwzPKzgwbhGik_1jhr2LA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				基础渲染系列 二 着色器 知乎
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+		
+	</div>
+
+		 
+		<div class="d-block mt-4 p-3">
+
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+		</div>
+		
+				</div>
+				<div class="col-sm-12 widget">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center py-4">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+					
+				</div>
+			</div>
+		</main>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+		
+		<!-- Footer CSS JS -->
+<!-- Statcounter code for 2_mamakamaa https://mamakamaa.blogspot.com/ on Blogger -->
+<script type="text/javascript">
+//<![CDATA[
+var sc_project=12506186; 
+var sc_invisible=1; 
+var sc_security="04fde361"; 
+//]]>
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter_xhtml.js" async></script>
+
+		
+		
+		
+			</body>
+</html>
